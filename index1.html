@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
     <title>Document</title>
-</head>
-<body>
-    <section style="display: flex;">
-        <h1 style="font-family: sans-serif; font-size: 3.5rem; margin-inline: auto;">Hello, World!</h1>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="./media/Logo.png" alt="logo" />
+      <nav>
+        <button class="menu-mobile">
+          <img src="./media/MenuIcon.svg" alt="menu" />
+        </button>
+        <ul class="menu-tablet">
+          <li>Contacts</li>
+          <li>Gallery</li>
+          <li>About Me</li>
+          <li>Projects</li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main">
+      <div class="info-container">
+        <img src="./media/portrait2.jpg" alt="portrait" />
+        <section class="text-info">
+          <div>
+            <span
+              style="
+                display: flex;
+                font-weight: 500;
+                align-items: center;
+                height: min-content;
+              "
+            >
+              <p style="color: #397ca2; height: min-content">Hello</p>
+              , I'm Sergey!
+            </span>
+            <p style="color: #868686; font-weight: 300">
+              I enjoy programming and am currently learning Web Development. I
+              adopt mainstream technologies, like: TS/JS, SCSS, Angular and
+              more. Feel free to review my projects above!
+            </p>
+          </div>
+          <div>
+            <span
+              style="
+                display: flex;
+                font-weight: 500;
+                align-items: center;
+                height: min-content;
+                column-gap: 0.375rem;
+              "
+            >
+              Skills:
+              <img
+                src="./media/html.svg"
+                alt="htmlLogo"
+                style="margin-left: 0.25rem"
+              />
+              <img src="./media/css.svg" alt="cssLogo" />
+              <img src="./media/js.svg" alt="jsLogo" />
+            </span>
+            <p style="color: #868686; font-weight: 300">
+              CSS: Grid/Flex Layouts <br />
+              HTML: Semantics <br />
+              JS: Event Loops, Async Programming etc.
+            </p>
+          </div>
+        </section>
+      </div>
     </section>
-</body>
+    <footer></footer>
+  </body>
 </html>

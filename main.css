@@ -1,3 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap");
+
+:root {
+  font-family: "Kanit", sans-serif;
+}
+
+html,
 body {
-    margin: 0 0;
+  margin: 0 0;
+}
+p {
+  margin: 0;
+  margin-block: 0;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+header {
+  display: flex;
+  padding: 0.7rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu-tablet {
+  display: none;
+  list-style: none;
+  column-gap: 0.75rem;
+}
+
+.menu-tablet > li {
+  font-weight: 300;
+}
+
+#main {
+  margin-top: 55px;
+  margin-inline: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main > div > img {
+  width: 100%;
+}
+
+#main > div > section > div > span {
+  font-size: 1.75rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
+  .menu-tablet {
+    display: flex;
+  }
+  .info-container {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .text-info {
+    row-gap: 2rem;
+  }
+  #main > div > section > div > span {
+    font-size: 1.75rem;
+  }
+  #main > div > section > div > p {
+    font-size: 1rem;
+  }
+  #main > div > img {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .info-container {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .text-info {
+    row-gap: 2rem;
+  }
+  #main > div > section > div > span {
+    font-size: 2rem;
+  }
+  #main > div > section > div > p {
+    font-size: 1.25rem;
+  }
+  .menu-tablet {
+    column-gap: 1.25rem;
+    font-size: 1.25rem;
+  }
+  #logo {
+    width: 7rem;
+  }
+  #main {
+    margin-inline: 10%;
+  }
+  header {
+    padding-inline: 6.5%;
+  }
 }
